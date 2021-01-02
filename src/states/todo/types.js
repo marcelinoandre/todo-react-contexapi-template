@@ -1,0 +1,6 @@
+export const typesTodo = {
+  TODO_ADD: 'TODO_ADD',
+  TODO_UPDATE: 'TODO_UPDATE',
+  TODO_DELETE: 'TODO_DELETE',
+  TODO_SEARCH: 'TODO_SEARCH'
+};
