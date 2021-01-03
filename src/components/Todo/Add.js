@@ -13,6 +13,7 @@ export const AddTodo = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
+    if (!title) return;
     dispatchTodo(todoAdd(title));
 
     reset();
@@ -25,6 +26,7 @@ export const AddTodo = () => {
         onChange={handleInputChange}
         value={title}
       />
+      <button>Add</button>
     </form>
   );
 };

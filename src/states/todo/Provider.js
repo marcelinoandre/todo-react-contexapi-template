@@ -8,7 +8,6 @@ export function ProviderTodo({ children }) {
 
   useEffect(() => {
     localStorage.setItem('LIST_DATA_TODO', JSON.stringify(todoList));
-    console.log('use efect chamado....');
   }, [todoList]);
 
   return (

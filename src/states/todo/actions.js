@@ -8,3 +8,12 @@ export const todoAdd = title => {
     }
   };
 };
+
+export const todoToggleCompleted = id => {
+  return {
+    type: typesTodo.TODO_TOGGLE_COMPLETED,
+    payload: {
+      id
+    }
+  };
+};

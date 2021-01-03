@@ -10,6 +10,13 @@ export function reducer(state, action) {
         completed: false
       });
 
+    case typesTodo.TODO_TOGGLE_COMPLETED:
+      return state.map(todo => {
+        if (todo.id === action.payload.id)
+          return { ...todo, completed: !todo.completed };
+        return todo;
+      });
+
     default:
       return state;
   }
